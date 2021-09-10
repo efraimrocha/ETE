@@ -1,5 +1,6 @@
 
 class Atividade01():
+#1
     def Exe01(self):
         consumo = float(input("Digite seu consumo em kw/h: "))
         tarifa_verde = 0.9
@@ -17,9 +18,7 @@ class Atividade01():
         else:
             print("Informe um valor real. ")
         return
-
-    #2 
-
+#2
     def Exe02(self):
         valor_gasolina = float(input('Digite o valor da gasolina: '))
         kml = float(input('Quantos km seu por litro? '))
@@ -29,13 +28,11 @@ class Atividade01():
         km_carga_totalVoltz = 120
         vm_mediaVoltz = 35
 
-
         def consumo_gasolina():
             qt_litros = km_viagem/kml
             total_gasolina = qt_litros*valor_gasolina
             round_total_gasolina = round(total_gasolina, 2)
             return round_total_gasolina
-
 
         def consumo_voltz():
             custo_cagacompleta = (5 * 2.4) * 0.9
@@ -46,7 +43,7 @@ class Atividade01():
 
         print("R$", consumo_gasolina() ,'será o valor da viagem usando gasolina.','\nR$', consumo_voltz() ,'será o valor da viagem usano a Voltz.')
 
-    #3 
+#3 
     def Exe03(self):
             print('Cédulas disponíveis: 100, 50, 20 e 10')
             saque = int(input('Digite o valor do saque: '))
